@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<meta neme="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sala De Juegos Hermanos Tulena - Premios</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quattrocento|Orbitron|Handlee">
+	<script src="./js/premios.js"></script>
+</head>
+<body>
+	<!-- ENCABEZADO PRINCIPAL -->
+    <header class="MainHeader">
+        <div class="MainHeader-image">
+            <img src="images/LogoSDJHT.png" alt="">
+        </div>
+        <div class="MainHeader-sesion">
+            <span class="u-btn">Iniciar Sesión</span>
+        </div>
+    </header>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <nav class="MainNav">
+        <ul class="MainNav-list">
+            <a href="index.html"><li class="u-btn">Principal</li></a>
+            <a href="ticket.html"><li class="u-btn">Ticket</li></a>
+            <a href="premios.html"><li class="u-btn">Premios</li></a>
+            <a href="acercade.html"><li class="u-btn">Acerca De..</li></a>
+            <a href="contacto.html"><li class="u-btn">Contacto</li></a>
+        </ul>
+    </nav>
+
+	<!-- MAIN -->
+    <main class="Main">
+        <section class="TitleAwards">
+            <div class="TitleAwards-header">
+				<h2>Generador De Premios</h3>
+            </div>
+        </section>
+        <section class="ConfigAwards u-displayFlex">
+			<div class="Canvas FormAwards">
+				<canvas id="canvashtml" width="260" height="260" ></canvas>
+			</div>
+			
+			<form action="" class="FormAwards">
+				<fieldset>
+					<legend>Opciones...</legend>
+					<label for="bonus">Bonus:</label>
+					<input type="checkbox" id="ckBonus" checked/>
+					<label for="whisky">Whisky:</label>
+					<input type="checkbox" id="ckWhisky" checked/>
+					<label for="ancheta">Ancheta:</label>
+					<input type="checkbox" id="ckAncheta" checked/>
+					<label for="electrodomestico">Electrodoméstico:</label>
+					<input type="checkbox" id="ckElectro"checked/><hr>
+					<input class="u-btn" type="button" id="btnGenerar" value="Generar" />
+				</fieldset>
+			</form>
+        </section>
+        <section class="MessageAwards">
+        	<div class="MessageAwards-text">
+                <span id="message" class="MessageText">eureka!!!</span>
+            </div>
+        </section>
+    </main>
+    
+     <!-- FOOTER PRINCIPAL -->
+    <footer class="MainFooter">
+        <div class="MainFooter-text">
+            <p>© 2015: Sala De Juegos Hnos. Tulena - Copyright © Todos los Derechos Reservados</p>
+            <p>By Fernando Soto Betin</p>
+        </div>
+    </footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>inicio();</script>
+</body>
+</html>

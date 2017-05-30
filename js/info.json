@@ -1,0 +1,9 @@
+{
+    "color":
+    [
+        { "color-banner" : "#0E5A81" },
+        { "color-footer" : "#0A2E4F" },
+        { "color-nav"    : "#EE7124" }
+    ]
+
+}

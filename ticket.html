@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<meta neme="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sala De Juegos Hermanos Tulena - Premios</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quattrocento|Orbitron|Handlee">
+</head>
+<body>
+	<!-- ENCABEZADO PRINCIPAL -->
+    <header class="MainHeader">
+        <div class="MainHeader-image">
+            <img src="images/LogoSDJHT.png" alt="">
+        </div>
+        <div class="MainHeader-sesion">
+            <span class="u-btn">Iniciar Sesión</span>
+        </div>
+    </header>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <nav class="MainNav">
+        <ul class="MainNav-list">
+            <a href="index.html"><li class="u-btn">Principal</li></a>
+            <a href="ticket.html"><li class="u-btn">Ticket</li></a>
+            <a href="premios.html"><li class="u-btn">Premios</li></a>
+            <a href="acercade.html"><li class="u-btn">Acerca De..</li></a>
+            <a href="contacto.html"><li class="u-btn">Contacto</li></a>
+        </ul>
+    </nav>
+	
+	<!-- MAIN -->
+    <main class="Main">
+        <section class="Screen">
+            <div class="ScreenMessage">
+                <h1 id="random" class="cuadro"> Bienvenidos! </h1>
+                <span id="message" class="MessageText">HOY.. Grita Goool Del Amor y Amistad.....!!</span>
+            </div>
+            <div class="ScreenConfig">
+                 <form method="post" class="FormRandom">
+                    <fieldset>
+                        <legend>Cofiguración...</legend>
+                        <input type="password" class="u-inputText" data-input="maxRandom" placeholder="Max. Random">
+                        <input type="radio" name="rRandom" class="input-radio" id="rNumero" value="numero" />Número 
+                        <input type="radio" name="rRandom" class="input-radio" id="rTexto" value="texto" checked="" />Texto
+                        <button data-generar class="u-btn">Generar</button>
+                        <button data-limpiar class="u-btn">Limpiar</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="SlideImg u-displayFlex">
+            <figure class="SlideImg-image">
+                <img class="SlideImg-imageSRC" src="./images/amistad/aya2016.jpg" alt="Feliz Día Del Padre">
+            </figure>
+            <figure class="SlideImg-image">
+                <img class="SlideImg-imageSRC" src="./images/otros/penalty.jpg" alt="Feliz Día Del Padre">
+            </figure>
+        </section>
+    </main>
+    
+    <!-- FOOTER PRINCIPAL -->
+    <footer class="MainFooter">
+        <div class="MainFooter-text">
+            <p>© 2016: Sala De Juegos Hnos. Tulena - Copyright © Todos los Derechos Reservados</p>
+            <p>By Fernando Soto Betin</p>
+        </div>
+    </footer>
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/ticket.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 90%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Quattrocento', arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* ___ ENCABEZADO PEINCIPAL ___*/
+.MainHeader {
+    padding: 5px;
+    background-color: #0E5A81;
+    display: flex;
+    justify-content: space-around;
+}
+
+    .MainHeader-image {
+        width: 50%;
+    }
+
+    .MainHeader-sesion {
+        text-align: right;
+        width: 50%;
+    }
+
+/* ___ BARRA DE NAVEGACIÓN PRINCIPAL  ____ */
+.MainNav {
+    padding: 0;
+}
+
+    .MainNav-list {
+        margin: 0;
+        padding: 2px;
+        background-color: #EE7124;
+        text-align: left;
+    }
+
+        .MainNav-list > li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+/* ___ LAYOUT PRINCIPAL ___ */
+.Main {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    flex: 1;
+}
+    .Main > section {
+        margin: 0;
+    }
+
+
+/* ___ FOOTER PRINCIPAL ___ */
+.MainFooter {
+    background-color: #0A2E4F;
+    width: 100%;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    .MainFooter-text {
+        font-weight: bold;
+        padding: 2px;
+        text-align: center;
+        color: white;
+    }
+
+/* ____________________________________________ */
+
+
+/* --- PÁGINA INDEX (PRINCIPAL) --- */
+
+.LayoutIndexOne {
+    padding: 5px;
+    text-align: center;
+}
+    .Container-one {
+        border: 2px solid #C90D34;
+        border-radius: 5px;
+        width: 50%;
+        flex: 1;
+    }
+
+    .Weather {
+        height: 25vh;
+        width: 40vw;
+        position: relative;
+        border: 2px solid #C90D34;
+        border-radius: 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+        .Weather-info {
+            position: absolute;
+            bottom: .4em;
+            left:.4em;
+            font-size: .7rem;
+            text-align: center;
+        }
+
+        .Weather-image {
+            display: block;
+            text-align: center;
+        }
+
+        .Weather-maxT {
+            color: #37b948;
+            text-shadow: none;
+        }
+
+        .Weather-maxT::before {
+            content: "Max: ";
+        }
+
+        .Weather-maxT::after {
+            content: "ºC"
+        }
+
+        .Weather-minT{
+          color: #bc2929;
+          text-shadow: none;
+        }
+
+        .Weather-minT::before {
+            content: "Max: ";
+        }
+
+        .Weather-minT::after {
+          content: "ºC"
+        }
+        
+        .Weather-tempA {
+            display: block;
+            font-size: 3rem;
+            line-height: 1;
+        }
+
+        .Weather-tempA::after {
+            content: " ºC";
+            font-size: 2rem;
+        }
+
+.SlideImg {
+padding: 5px;
+   margin: 0 auto;
+}
+
+    .SlideImg-image {
+        width: 100%;
+        border: 2px solid #C90D34;
+        padding: .5em;
+    }
+
+        .SlideImg-imageSRC {
+            width: 100%;
+            height: 400px;
+        }
+
+
+/* --- PÁGINA TIKECT --- */
+        
+.Screen {
+    padding: 5px;
+    text-align: center;
+}
+
+    .ScreenMessage {
+        width: 100%;
+        border: 2px solid #C90D34;
+        border-radius: 5px;
+        padding: 1em;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+        #random {
+            font-family: 'Orbitron', arial;
+            font-weight: bold;
+            font-size: 100px;
+        }
+
+    .ScreenConfig {
+        margin: 4px 0 0 0;
+    }
+
+        .FormRandom {
+            width: 100%;
+            padding: 1em;
+            border: 2px solid #C90D34;
+            border-radius: 5px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+             .FormRandom  > fieldset {
+                padding: 7px 5px 7px 5px;
+                width: ´100%;
+                text-align: center;
+            }
+
+/* --- FIN PÁGINA TIKECT --- */
+
+/* --- PÁGINA PREMIOS --- */
+
+.TitleAwards {
+    padding: 5px;
+    text-align: center;
+}
+    .TitleAwards-header {
+        font-family: 'Orbitron', arial;
+        font-weight: bold;
+        font-size: 35px;
+    }
+
+.ConfigAwards {
+    padding: 5px;
+}
+    .Canvas {
+        text-align: center;
+    }
+
+    .FormAwards {
+        padding: 1em;
+        border: 2px solid #C90D34;
+        border-radius: 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+        flex: 1;
+    }
+
+        .FormAwards > fieldset {
+            padding: 7px 5px 7px 5px;
+            text-align: center;
+        }
+
+.MessageAwards {
+    padding: 5px;
+}
+
+    .MessageAwards-text{
+        text-align: center;
+        padding: 1em;
+        border: 2px solid #C90D34;
+        border-radius: 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+        .MessageText {
+            font-size: 3em;
+            font-family: 'Handlee', arial;
+            padding: 1em;
+            vertical-align: middle;
+        }
+
+
+/* --- FIN PÁGINA PREMIOS --- */
+
+/* --- PÁGINA ACERCA DE --- */
+
+.Leyenda {
+    padding: 5px;
+}
+    .Leyenda > article {
+        width: 50%;
+        border: 2px solid #C90D34;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .Leyenda > article > p {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .LeyendaText-title {
+        font-family: 'Orbitron', arial;
+        font-weight: bold;
+        font-size: 35px;
+        padding: 5px 5px 10px 0;
+    }
+
+    .LeyendaImage-src {
+        width: 75%;
+        height: 300px;
+        border-radius: 50px;
+    }
+
+/* --- FIN PÁGINA ACERCA DE --- */
+
+/* --- PÁGINA CONTACTO --- */
+
+
+.FormContact {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px 10px 10px 10px;
+    color: red;
+    text-shadow: 0 2px 1px rgba(0,0,0,0.3);
+}
+
+    .FormContact ul { 
+        width: 700px; 
+        list-style-type: none; 
+        list-style-position: outside; 
+        margin: 0px; 
+        padding: 0px; 
+    } 
+
+    .FormContact li { 
+        padding: 12px; 
+        border-bottom: 1px solid #eee; 
+        position: relative; 
+    } 
+
+        .FormContact li:first-child, .FormContact li:last-child { 
+            border-bottom: 1px solid #777; 
+        } 
+
+    .FormContact h1 {
+        margin: 0;
+        display: inline;
+        font-weight: bold;
+        font-family: 'Orbitron', arial;
+        font-size: 35px;
+        color: black;
+
+    }
+    
+    .FormContact label {
+        width: 150px; 
+        margin-top: 3px; 
+        display: inline-block; 
+        float: left; 
+        padding: 3px;
+    }
+
+    .FormContact input { 
+        height: 20px; 
+        width: 220px; 
+        padding: 5px 8px; 
+    } 
+
+    .FormContact textarea { 
+        padding: 8px; 
+        width: 220px; 
+        height: 100px;
+    }
+    
+    .required_notification { 
+        color: #d45252; 
+        margin: 5px 0 0 0; 
+        display: inline; 
+        float: right; 
+    } 
+
+    .FormContact input, .FormContact textarea { 
+        border: 1px solid #aaa; 
+        box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset; 
+        border-radius: 2px; 
+        padding-right: 30px; 
+        -moz-transition: padding .25s; 
+        -webkit-transition: padding .25s; 
+        -o-transition: padding .25s; 
+        transition: padding .25s; 
+    } 
+
+    .FormContact input:focus, .FormContact textarea:focus { 
+        background: #fff; 
+        border: 1px solid #555; 
+        box-shadow: 0 0 3px #aaa; 
+        padding-right: 70px; 
+    }
+    
+    .FormContact input[type=submit] {
+        width: 100%;
+        height: 30px;
+        padding: 8px 5px;
+        background: linear-gradient(rgba(99,64,86,0.5), rgba(76,49,65,0.7));    
+        border-radius: 5px;
+        border: 1px solid #4e3043;
+        box-shadow: 
+        inset 0 1px rgba(255,255,255,0.4), 
+        0 2px 1px rgba(0,0,0,0.1);
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+        color: white;
+        text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Raleway', 'Lato', Arial, sans-serif;
+    }
+
+
+/* --- FIN PÁGINA CONTACTO --- */
+
+/*  ◙◙◙ UTILIDADES ◙◙◙ */
+
+.u-displayFlex {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ☼☼☼ Estilo Del Boton ☼☼☼ */
+
+.u-btn {
+    display : inline-block;
+    line-height : 1;
+    color : white;
+    text-align : center;
+    vertical-align : middle;
+    font-size: .8rem;
+    white-space:nowrap;
+    background-color : #C90D34;
+    border : none;
+    font-weight: bold;
+    cursor : pointer;
+    margin: 0;
+    padding: 1em;
+    border-radius: 2px;
+}
+
+/* ☼☼☼ Entrada Caja De Texto ☼☼☼ */
+
+.u-inputText {
+    text-align: center;
+    -webkit-appearance: none;
+    padding: .5em;
+    display: inline-block;
+}
+
+.u-span {
+    font-weight: bold;
+}
+
+/*  ◙◙◙ FIN UTILIDADES ◙◙◙ */
+
+
+
+
+
+
+

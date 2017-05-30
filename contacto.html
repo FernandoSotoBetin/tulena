@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<meta neme="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sala De Juegos Hermanos Tulena - Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quattrocento|Orbitron|Handlee">
+</head>
+<body>
+    <!-- ENCABEZADO PRINCIPAL -->
+    <header class="MainHeader">
+        <div class="MainHeader-image">
+            <img src="images/LogoSDJHT.png" alt="">
+        </div>
+        <div class="MainHeader-sesion">
+            <span class="u-btn">Iniciar Sesión</span>
+        </div>
+    </header>
+
+    <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+    <nav class="MainNav">
+        <ul class="MainNav-list">
+            <a href="index.html"><li class="u-btn">Principal</li></a>
+            <a href="ticket.html"><li class="u-btn">Ticket</li></a>
+            <a href="premios.html"><li class="u-btn">Premios</li></a>
+            <a href="acercade.html"><li class="u-btn">Acerca De..</li></a>
+            <a href="contacto.html"><li class="u-btn">Contacto</li></a>
+        </ul>
+    </nav>
+
+	<!-- MAIN -->
+    <main class="Main">
+        <section class="u-displayFlex">
+
+           <form action="./php/contacto.php" method="post" class="FormContact">
+                 <ul>
+                    <li>
+                        <h1>Contacto</h1>
+                        <span class="required_notification">Complete Los Datos</span> 
+                    </li>
+                    <li>
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text" name="nombre" placeholder="Nombre y Apellido" required="" />
+                    </li>
+                     <li>
+                         <label for="email">Email:</label>
+                         <input id="email" type="email" name="email" placeholder="ejemplo@correo.com" required="" />
+                     </li>
+                     <li>
+                         <label for="asunto">Asunto:</label>
+                         <input id="asunto" type="text" name="asunto" placeholder="Asunto" required="" />
+                     </li>
+                     <li>
+                         <label for="mensaje">Mensaje:</label>
+                         <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required=""></textarea>
+                     </li>
+                     <li>
+                         <input id="submit" type="submit" name="submit" value="Enviar"/>
+                     </li>
+                 </ul>
+            </form>
+
+        </section>
+    </main>
+    
+    <!-- FOOTER PRINCIPAL -->
+    <footer class="MainFooter">
+        <div class="MainFooter-text">
+            <p>© 2015: Sala De Juegos Hnos. Tulena - Copyright © Todos los Derechos Reservados</p>
+            <p>By Fernando Soto Betin</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/apiweather.js"></script>
+    	
+</body>
+</html>
